@@ -1,0 +1,109 @@
+body {
+    background-color: rgb(210, 144, 210);
+}
+
+.addNote {
+    width: 70px;
+    height: 40px;
+    background-color: rgb(181, 177, 177);
+    position: relative;
+    margin: 20px;
+    border: 2px solid black;
+}
+
+.addNote span {
+    font-size: 50px;
+    margin-left: 50%;
+    margin-top: 50%;
+    transform: translate(-50%, -75%);
+    position: absolute;
+    color: grey;
+    cursor: pointer;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+}
+
+.deleteAll #deleteButton {
+    color :red;
+}
+
+.blue {
+    width: 120px;
+    height: 120px;
+    background-color: white;
+    float: right;
+    margin-right: 200px;
+    margin-top: 50px;
+}
+
+.white {
+    width: 120px;
+    height: 120px;
+    background-color: white;
+    float: left;
+    margin-left: 200px;
+    margin-top: 350px;
+}
+
+.yellow {
+    width: 120px;
+    height: 120px;
+    background-color: yellow;
+    float: left;
+    margin-left: 400px;
+    margin-top: 150px;
+}
+
+.appInfo {
+    font-size: 50px;
+    opacity: 0.4;
+    position: absolute; 
+    margin-left: 300px;
+    margin-top: 190px;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+}
+
+.parent {
+    display: flex;
+    flex-wrap: wrap;
+    /* overflow-x: scroll; */
+}
+
+#notes {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+[class^="stickynote"] {
+    margin-left: 4px;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+[class^="header"] {
+    width: auto;
+    height: 20px;
+    cursor: pointer;
+}
+
+[class^="closeBtnClass"] {
+    position: relative;
+    float: right;
+    left: 0px;
+    top: 1px;
+    color: white;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    cursor: pointer;
+    z-index:99;
+    background-color: grey;
+}
+
+[class^="closeBtn"]:hover {
+    color: white;
+    background-color: rgb(212, 146, 212);
+}
